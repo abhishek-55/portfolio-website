@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar | Software Engineer</title>
+    <link rel="shortcut icon" href="icons/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <div>
+            <a href="#"><h1 id="resume" class="nav-el">Resume</h1></a>             
+        </div>
+            <ul data-visible="false" id="primary-navigation">
+                <li class="nav-el"><a id="0" class="div-link active" onclick="handleClass(this.id)" href="#home">Home</a></li>
+                <li class="nav-el"><a id="1" class="div-link" onclick="handleClass(this.id)" href="#education">Education</a></li>
+                <li class="nav-el"><a id="2" class="div-link" onclick="handleClass(this.id)" href="#experience">Experience</a></li>
+                <li class="nav-el"><a id="3" class="div-link" onclick="handleClass(this.id)" href="#projects">Projects</a></li>
+                <li class="nav-el"><a id="4" class="div-link" onclick="handleClass(this.id)" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="menu" aria-controls="primary-navigation" data-visible="false" aria-expanded="false"></button>
+    </header>
+    <section class="container">
+        <div id="home">
+                <svg id="hello" width="97.128" height="95.627" >
+                    <g  transform="translate(-32.982 -31.554)">
+                        <path id="Path_4" data-name="Path 4" d="M76.8,45.74A7.432,7.432,0,0,1,87.31,35.23l35.51,35.51c9.9,9.9,6.85,29.4-7.25,43.12a41.55,41.55,0,0,1-14.72,9.38,43.46,43.46,0,0,1-23.6,1.48l-21.68-4.3c-2.47-.25-5.77-.91-7-4.82a7.43,7.43,0,0,1,4.82-9.34l1.69-.07,18.38-.73L36.66,68.68A7.435,7.435,0,0,1,47.17,58.16l-6.7-6.7A7.439,7.439,0,0,1,51,40.95l6.7,6.7A7.43,7.43,0,1,1,68.2,37.14Z" fill="#fce7d0"/>
+                        <path id="Path_5" data-name="Path 5" d="M76.22,35.81a7.49,7.49,0,0,0-.05,10.56l-8.6-8.6c-2.9-2.9-8.95-.83-11.85,2.07,0,0,4.13-4.13,12.65,5.8l39.78,39.78c8,8,7.6,22.34-.42,34.8a44.549,44.549,0,0,0,7.2-5.72c14.1-13.71,17.26-33.32,7.36-43.23L86.78,35.76a7.48,7.48,0,0,0-10.56.05Z" fill="#f4c7ad"/>
+                        <path id="Path_6" data-name="Path 6" d="M68.2,80.69a1.5,1.5,0,0,1-1.06-.44L39.41,52.52A8.93,8.93,0,0,1,52,39.89L81,68.8a1.5,1.5,0,0,1-2.12,2.12L49.92,42a5.933,5.933,0,0,0-8.39,8.39L69.26,78.13a1.5,1.5,0,0,1-1.06,2.56Z" fill="#5a150b"/>
+                        <path id="Path_7" data-name="Path 7" d="M90.41,60.85a1.5,1.5,0,0,1-1.06-.44L67.14,38.2a5.9,5.9,0,0,0-4.2-1.74h0a5.94,5.94,0,0,0-4.19,10.13,1.5,1.5,0,0,1-2.12,2.12,8.93,8.93,0,0,1,6.31-15.25h0a8.88,8.88,0,0,1,6.32,2.62L91.47,58.29a1.5,1.5,0,0,1-1.06,2.56Z" fill="#5a150b"/>
+                        <path id="Path_8" data-name="Path 8" d="M86.76,127.18a50.42,50.42,0,0,1-9.8-1L55.35,121.9c-1.87-.19-6.59-.73-8.23-5.85a9,9,0,0,1,5.79-11.23,1.51,1.51,0,0,1,.4-.07L70,104.1,35.6,69.74A8.938,8.938,0,0,1,48.24,57.1a1.5,1.5,0,0,1-2.12,2.12,5.933,5.933,0,0,0-8.39,8.39L74.51,104.4a1.5,1.5,0,0,1-1,2.56l-19.85.79a6,6,0,0,0-3.66,7.4c.88,2.75,2.93,3.5,5.74,3.78h.14l21.68,4.3a42,42,0,0,0,22.79-1.42,40.08,40.08,0,0,0,14.2-9.05c7.82-7.6,12.52-17.56,12.58-26.64,0-5.84-1.81-10.8-5.35-14.34L86.25,36.29a5.933,5.933,0,0,0-8.39,8.39,1.5,1.5,0,0,1-2.12,2.12A8.931,8.931,0,0,1,88.37,34.17l35.51,35.51c4.12,4.12,6.27,9.82,6.23,16.48C130,96,125,106.78,116.62,114.93a43,43,0,0,1-15.24,9.71,41.83,41.83,0,0,1-14.62,2.54Z" fill="#5a150b"/>
+                    </g>
+                </svg>
+            <h1 class="fadeinup default-cursor">Hello, my name is </h1>        
+            <h2 class="fadeinup header default-cursor">Abhishek Kumar.</h2>
+            <h3 class="fadeinup default-cursor">I am a software developer.</h3>
+            <p id="description" class="fadeinup">I am a junior from INDIA . I'm passionate about fullstack MERN development, Android development and an open-source enthusiast. I love learning new technologies and working on them. I am currently looking for internships and opportunities to collaborate with.</p>
+            <button class="btn" ><a href="#contact">Reach me out</a></button>        
+    </div>
+    <div class="each-section" id="tech-stack">
+        <div class="section-title">
+            <h4 style="flex: 3;">TECH I'M FAMILIAR WITH</h4>
+            <p>TECH STACK</p>
+        </div>
+        <div class="col">
+            <div class="col-1">
+                <div class="box-even"><img class="hvr img-ico" src="icons/javascript.svg" alt="javascript"/></div>
+                <div class="box-odd"><img class="hvr img-ico" src="icons/java.svg" alt="java"/></div>
+                <div class="box-even"><img class="hvr img-ico" src="icons/kotlin.svg" alt="kotlin"/></div>
+                <div class="box-odd"><img class="hvr img-ico" src="icons/python.svg" alt="python"/></div>
+            </div>
+            <div class="col-1">
+                <div class="box-odd"><img class="hvr img-ico" src="icons/C.svg" alt="c"/></div>
+                <div class="box-even"><img class="hvr img-ico" src="icons/C++.svg" alt="C++"/></div>
+                <div class="box-odd"><img class="hvr img-ico" src="icons/html.svg" alt="html"/></div>
+                <div class="box-even"><img class="hvr img-ico" src="icons/CSS.svg" alt="css"/></div>
+            </div>
+            <div class="col-1">
+                <div class="box-even"><img class="hvr img-ico" src="icons/monogDB.svg" alt="MongoDB"/></div>
+                <div class="box-odd"><img class="hvr img-ico" src="icons/expressjs.svg" alt="expressjs"/></div>
+                <div class="box-even"><img class="hvr img-ico" src="icons/react.svg" alt="react"/></div>
+                <div class="box-odd"><img class="hvr img-ico" src="icons/nodejs.svg" alt="nodejs"/></div>
+            </div>
+            <div class="col-1">
+                <div class="box-odd"><img class="hvr img-ico" src="icons/android.svg" alt="android"/></div>
+                <div class="box-even"><img class="hvr img-ico" src="icons/linux.svg" alt="linux"/></div>
+                <div class="box-odd"><img class="hvr img-ico" src="icons/GCP.svg" alt="gcp"/></div>
+                <div class="box-even"><img class="hvr img-ico" src="icons/azure.svg" alt="azure"/></div>
+                
+            </div>
+        </div>
+        </div>
+        <div class="each-section" id="education">
+            <div class="section-title">
+                <h4>EDUCATION</h4>
+                <p>ACADEMICS</p>
+            </div>
+            <div class="col">
+                <img class="edu-img" src="images/SOA-logo.png" alt="SOA-logo" width="15%" style="float: left; margin-right: 3rem;">
+                <h5>ITER</h5>
+                <p>Currently pursuing B.tech at Insitute of Technical Education and Research ( ITER ), Siksha 'O' Anusandhan University, Bhubaneswar, Odisha.</p>
+                <p>B.Tech ( 2019 - 2023 )  - 8.83<sup> <b>* upto 4th semester</b></sup></p>
+            </div>   
+        </div>
+        <div class="each-section" id="experience">
+            <div class="section-title">
+                <h4>EXPERIENCE</h4>
+                <p>EXPERIENCE</p>
+            </div>
+            <h1>Internships and Open-Source contributions</h1>
+            <div class="col">
+                <img src="icons/fossasia-logo.svg" alt="badge-magic-android-card" width="15%" style="float: right; margin-right: 4rem;">
+                <h5>badge-magic-android</h5>
+                <p>It is an open-source project of FOSSASIA which lets users to  create moving text and draw or select clipart for LED name badges and transfer them over bluetooth.</p>
+                <p>I contributed to this project by adding 25 more cliparts writing 725 lines of code.</p>
+            </div>
+        </div>
+        <div class="each-section" id="projects">
+            <div class="section-title">
+                <h4>PROJECTS</h4>
+                <p>PROJECTS</p>
+            </div>
+            <div class="col">
+                <img src="icons/vaccine-slotchecker-logo.svg" alt="vaccine-slotchecker-app-logo" width="15%" style="float: right; margin-left: 4rem;">
+                <h5>Vaccine SlotChecker</h5>
+                <p>Tech Stack: Android studio, Kotlin</p>
+                <ol>
+                    <li><p>An android app to check covid-19 vaccine slots available at their nearest vaccination center made using Co-WIN Public APIs.</p></li>
+                    <li><p>Users can search slots either by selecting state and district or by entering pin.</p></li>
+                </ol>
+                   
+                   
+            </div> 
+        </div>
+        <div class="each-section" id="contact">
+            <div class="section-title">
+                <h4>CONTACT ME</h4>
+                <p>CONTACT</p>
+            </div>
+            <div class="col">
+                <form action="/" method="POST">
+                    <div class="small-input-wrap">
+                        <input class="small-input"  type="text" name="name" id="name" placeholder="Name" autocomplete="off">
+                        <input class="small-input" type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                    </div>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" style="width: 96%;">
+                    <textarea name="body" id="message" placeholder="Message" rows="10" style="resize: none; width: 96%;"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="col icons-col">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/abhishek-kumar-linked/" target="_blank"><img class="icon-svg" src="icons/linkedin.svg" alt="linkedin-logo"></a></li>
+                    <li><a href="https://github.com/abhishek-55" target="_blank"><img class="icon-svg" src="icons/github.svg" alt="github-icon"></a></li>
+                    <li><a href="https://twitter.com/_abhishek__kr" target="_blank"><img class="icon-svg" src="icons/twitter.svg" alt="Twitter-icon" ></a></li>
+                    <li><a href="https://www.instagram.com/abhishek_.555/" target="_blank"><img class="icon-svg" src="icons/instagram.svg" alt="Instagram-icon" ></a></li>
+                    <li><a href="mailto:abhishekbt2001@gmail.com"><img class="icon-svg" src="icons/mail.svg" alt="Instagram-icon"></a></li>
+                </ul>    
+            </div>
+            
+    </section> 
+    <footer>
+        <p>Made with &#10084; by Abhishek kumar</p>
+    </footer> 
+
+<script src="./index.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

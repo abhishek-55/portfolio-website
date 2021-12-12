@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* ////////////////      Setting all the required fonts and color palletes as a variable         ///////////////////////*/
+:root {
+    --font-primary: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    --font-secondary: 'Poppins', sans-serif;
+    --font-paragraph : Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    --font-link: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;
+    --color-bg:#0a192f;
+    --color-primary: #64FFDA;
+    --color-secondary: #233554;
+    --color-slate : #8892B0;
+    --color-light-slate: #CCD6F6;
+  }
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+    
+}
+
+/* ==========  h1 to h6 below ==================== */
+h1, h6{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    font-size: calc(0.35vw + 0.65rem);
+    font-weight: normal;
+    margin: 0px 0px 1rem 0px;
+}
+h2 {
+    font-family: var(--font-secondary);
+    font-size: calc(2vw + 2rem);
+    font-weight: bold;
+    color: var(--color-light-slate);
+    margin: 0px 0px 10px;
+    line-height: 1.1;
+}
+h3 ,h4, h5{
+    font-family: var(--font-secondary);
+    color: var(--color-slate);
+    font-weight: bold;
+    font-size: calc(2vw + 2rem);
+    margin: 0px 0px 10px;
+    line-height: 1.1;
+}
+h5{
+    font-size: calc(1vw + 1rem);
+}
+h4{
+    font-size: calc(3vw + 2rem);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+b{
+    color: var(--color-primary);
+}
+
+p {
+    color: var(--color-slate);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: var(--font-paragraph);
+}
+section {
+    margin: 2rem auto;
+    width: 65%;
+}
+input, textarea {
+    color: var(--color-primary);
+    padding: 1rem;
+    margin: 1rem .5rem;
+    background: #112240;
+    border: none;
+    font-family: var(--font-primary);
+}
+input:focus, textarea:focus {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--color-primary);
+}
+nav {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+li > a {
+    color: var(--color-light-slate);
+    text-underline-position: under;
+    position: relative;
+}
+
+li>a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+ul>li{
+    padding: 2rem 1rem;
+    display: inline-block;
+    font-family: var(--font-link);
+}
+
+ol > li {
+    font-family: var(--font-link);
+    list-style-type: lower-roman;
+    color: var(--color-slate);
+}
+span{
+    transition: transform .2s;
+    position: relative;
+}
+span:hover{
+    transform: scale(1.5);
+    top: -5px;
+    color: var(--color-primary);
+}
+footer {
+    background-color: rgb(2, 12, 27);
+    color: var(--color-slate);
+    padding: 2rem;
+    text-align: center;
+}
+/*  ////////////////////    targetting elements by id ////////////////*/
+#menu {
+    position: fixed;
+    border: none;
+    top: 1.75rem;
+    right: 1.75rem;
+    background: url('./icons/hamburger.svg');
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    aspect-ratio: 1;
+    z-index: 10;
+    visibility: hidden;
+}
+#description {
+    width: 60%;
+    margin: 2rem 0;
+}
+#hello {
+    position: relative;
+    bottom: -5rem;
+    left: -10rem;
+    transform-origin: bottom right 60px;
+    animation: shake ease-in-out 450ms infinite alternate;
+}
+
+/* ///////////////    targetting elements by class name      ///////////////// */
+
+
+.active {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+.btn:hover {
+    background: var(--color-primary);
+}
+.btn > a {
+    color: var(--color-primary);   
+}
+.btn:hover > a {
+    color:  var(--color-bg);
+}
+.btn {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    padding: 1.55rem calc(1vw + 1.75rem);
+    margin: 4rem 0;
+    border-radius: 3px;
+    font-family: var(--font-link);
+    font-size: 1rem;
+    transition-duration: 0.4s;   
+}
+.box-odd{
+    padding: 2rem;
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
+    background: var(--color-bg);
+}
+.box-even:hover .hvr{
+    transform: scale(1.5);
+}
+.box-odd:hover .hvr{
+    transform: scale(1.5);
+}
+.box-even{
+    width: 25%;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+    background: #112240;
+}
+.col-1 {
+    display: flex;
+}
+
+.col > a {
+    margin: 2rem;
+}
+.col {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+.default-cursor {
+    user-select: none;
+    cursor: default;
+}
+.each-section {
+    min-height: 90vh;
+}
+.hvr{
+    transition: transform .2s;
+
+}
+.img-ico{
+    width: 50%;
+}
+.icons-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-svg{
+    width: 50%;
+}
+.snall-input-wrap{
+    display: inline;
+}
+.small-input {
+    width: 47%;
+}
+.section-title > p {
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: calc(6vw + 4rem);
+    position: relative;
+    bottom: 8.5rem;
+    margin-bottom: -5rem;
+    text-transform: uppercase;
+    color: #112240;
+    z-index: -5;
+}
+.section-title{
+    margin-top: 7rem;
+}
+.section-title > h5{
+    flex: 1;
+    text-align: center;
+}
+
+/* ////////////////////////////        Media Queries Written Below         /////////////////////////////////// */
+
+/* ------------------------- For the smallest screen Sizes ---------------------------*/
+@media (max-width: 600px) {
+    section {
+        width: 90%;
+    }
+    #description {
+        width: 80%;
+    }
+    .img-ico{
+        width: 90%;
+    }
+    #hello{
+        left: 0;
+        bottom: 2rem;
+    }
+    .small-input {
+        width: 96%;
+    }
+    .col-1 {
+        display: inline-block;
+    }
+    .box-even, .box-odd {
+        margin: 0.5rem auto;
+        width: 65%;
+        background: #112240;
+    }
+    .each-section{
+        min-height: 0;
+    }
+}
+
+/* ------------------------- Screen Size for tablets devices ---------------------------*/
+
+@media (max-width: 768px) {
+    section {
+        width: 75%;
+    }
+    ul>li{
+        display: block;
+     }
+    nav {
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        align-items: flex-start;
+    }
+    nav > ul {
+        background: hsl(0, 0%, 100%,0.1);
+        backdrop-filter: blur(1rem);
+        width: 60%;
+        padding-top: 2rem;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+    #primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+    #menu {
+        visibility: visible;
+    }
+    #resume {
+        font-size: 1.3rem;
+        padding-top: 2rem;
+    }
+    .img-ico{
+        width: 80%;
+    }
+    #hello{
+        left: 50px;
+    }
+    .section-title > p {
+        display: none;
+    }
+    .section-title > h4 {
+        margin: 3rem 0;
+    }
+    .small-input {
+        width: 45.5%;
+    }
+    .icon-svg{
+        width: 30%;
+    }
+}
+
+/* ------------------------- Screen laptop of smaller screen sizes and above ---------------------------*/
+
+
+@media (max-width: 992px)and (min-width:768px) {
+    section {
+        width: 70%;
+    }
+    .img-ico{
+        width: 70%;
+    }
+    #hello{
+        left: -8rem;
+    }
+    .small-input {
+        width: 46.5%;
+    }
+    .icon-svg{
+        width: 40%;
+    }
+}
+
+/* //////////////////  Hello animation if the hand SVG   /////////////////////////////////////// */
+
+@keyframes shake {
+    from{
+        transform: rotate(-15deg); 
+    }
+    to{
+        transform: rotate(20deg); 
+    }   
+}
