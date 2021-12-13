@@ -4,7 +4,7 @@ anime({
     opacity: [0,1],
     duration: 1500,
     direction: 'linear',
-    delay: anime.stagger(100,  {start: 400})
+    delay: anime.stagger(100)
   });
   anime({
     targets: '.nav-el',
@@ -12,7 +12,7 @@ anime({
     opacity: [0,1],
     duration: 1500,
     direction: 'linear',
-    delay: anime.stagger(100,  {start: 1000})
+    delay: anime.stagger(100,  {start: 400})
   });
 
 let header = document.querySelector(".header");
