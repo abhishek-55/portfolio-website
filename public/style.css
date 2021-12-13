@@ -230,6 +230,9 @@ footer {
 .each-section {
     min-height: 90vh;
 }
+.fadeinup, .nav-el{
+    opacity: 0;
+}
 .hvr{
     transition: transform .2s;
 
